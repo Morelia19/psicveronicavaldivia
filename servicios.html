@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentes Geniales</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "verde": "#6ABFAA",
+                        "verde-oscuro": "#5FA996",
+                        "azul": "#7ABBFF",
+                        "azul-oscuro": "#50A5FF",
+                        "naranja": "#FCCFBC",
+                        "gris": "#959595",
+                        "gris-claro": "#F9F8F8",
+                    },
+
+                    screens: {
+                        'xs': "320px",
+
+                        'sm': "640px",
+
+                        'md': "768px",
+
+                        'lg': "1024px",
+
+                        'xl': "1280px",
+
+                        "2xl": "1536px",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-gray-300 lg:overflow-x-hidden md:overflow-x-hidden xs:overflow-x-hidden">
+    <nav class="z-[100] bg-white/4 lg:px-[150px] lg:py-[25px] xs:px-[30px] xs:py-[25px]">
+        <div class="flex justify-between items-center">
+            <a href="#" class="hover:no-underline">
+                <p class="text-[21px] text-black">
+                    Mentes<b class="font-extrabold text-verde">Geniales</b>
+                </p>
+            </a>
+
+            <div class="hidden md:flex">
+                <a href="index.html"
+                    class="hover:text-[#6ABFAA] text-black text-verde text-[17px] font-bold px-[30px] py-3 rounded-md hover:bg-white/5 hover:no-underline">
+                    Inicio
+                </a>
+                <a href="servicios.html"
+                    class="text-verde text-[17px] font-medium px-[30px] py-3 rounded-md hover:no-underline">
+                    Servicios
+                </a>
+                <a href="sobremi.html"
+                    class="text-black text-[17px] font-medium px-[30px] py-3 rounded-md hover:text-[#6ABFAA] hover:no-underline">
+                    Sobre mí
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=51997390808&text=%C2%A1Hola%21%20Quisiera%20solicitar%20informaci%C3%B3n&type=phone_number&app_absent=0"
+                    class="block bg-verde ml-5 text-white text-[16px] font-bold px-[25px] py-3 rounded-[18px] hover:bg-[#5aa391] hover:no-underline"
+                    target="_blank">
+                    Contáctame
+                </a>
+            </div>
+
+            <div class="md:hidden">
+                <button data-mobile-menu class="py-3 px-2 hover:text-[#6ABFAA]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 6l16 0" />
+                        <path d="M4 12l16 0" />
+                        <path d="M4 18l16 0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!--Menu Celular -->
+        <div class="absolute z-10 bg-white w-[90%] hidden" id="mobile-menu">
+            <div class="flex flex-col gap-1 py-3">
+                <a href="index.html" class="bg-gray-900 text-white px-3 py-2 rounded-md font-medium">
+                    Inicio
+                </a>
+                <a href="servicios.html" class="hover:bg-white/5 hover:text-[#6ABFAA] hover:no-underline block px-3 py-2 rounded-md">
+                    Servicios
+                </a>
+                <a href="sobremi.html" class="hover:bg-white/5 hover:text-[#6ABFAA] hover:no-underline block px-3 py-2 rounded-md">
+                    Sobre mí
+                </a>
+
+                <a href="https://api.whatsapp.com/send/?phone=51997390808&text=%C2%A1Hola%21%20Quisiera%20solicitar%20informaci%C3%B3n&type=phone_number&app_absent=0"
+                    class="hover:bg-white/5 hover:text-[#6ABFAA] hover:no-underline block px-3 py-2 rounded-md"
+                    target="_blank">
+                    Contáctame
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--SERVICIOS-->
+    <section class="bg-white lg:px-[150px] lg:py-[60px] lg:pb-[90px] xs:px-[30px] xs:py-[25px]">
+
+        <h1 class="text-[40px] pb-[40px] text-center font-extrabold">Mentes Geniales ofrece...</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+            <!--Verde-->
+            <div class=" rounded-[20px] overflow-hidden shadow-md hover:shadow-lg h-[370px]">
+                <img src="assets/img/t1.png" alt="Psicoterapias para niños" class="w-full" />
+                <h3 class="font-[600] p-2">Niños</h3>
+                <p class="px-2 mb-3">
+                    En la psicoterapia con niños, creo un espacio acogedor donde pueden
+                    expresarse a través de juegos y actividades creativas.
+                </p>
+
+                <a href="https://wa.link/jzpa15" target="_blank" class="text-center no-underline hover:no-underline bg-verde px-[20px] py-[10px] rounded-[10px] flex items-center justify-center w-[300px] mx-[20px] hover:bg-verde-oscuro">
+                    <p class="text-[16px] text-center">Reservar una cita</p>
+                </a>
+            </div>
+            
+
+            <div class="rounded-[20px] overflow-hidden shadow-md hover:shadow-lg h-[370px]">
+                <img src="assets/img/t2.png" alt="Psicoterapias para niños" />
+                <h3 class="font-[600] p-2">Adolescentes</h3>
+                <p class="px-2 mb-3">
+                    En la psicoterapia con adolescentes, proporciono un espacio
+                    confidencial para explorar pensamientos y emociones.
+                </p>
+                <a href="https://wa.link/y1szd9" target="_blank" class="text-center no-underline hover:no-underline bg-verde px-[20px] py-[10px] rounded-[10px] flex items-center justify-center w-[300px] mx-[20px] hover:bg-verde-oscuro">
+                    <p class="text-[16px] text-center">Reservar una cita</p>
+                </a>
+            </div>
+    
+            <div class="rounded-[20px] overflow-hidden shadow-md hover:shadow-lg h-[370px]">
+                <img src="assets/img/t3.png" alt="Psicoterapias para niños" />
+                <h3 class="font-[600] p-2">Adultos</h3>
+                <p class="px-2 mb-3">
+                    En la psicoterapia para adultos, abordamos desafíos emocionales a
+                    través de conversaciones centradas en el
+                    individuo.
+                </p>
+                <a href="https://wa.link/e249w1" target="_blank" class="text-center no-underline hover:no-underline bg-verde px-[20px] py-[10px] rounded-[10px] flex items-center justify-center w-[300px] mx-[20px] hover:bg-verde-oscuro">
+                    <p class="text-[16px] text-center">Reservar una cita</p>
+                </a>
+            </div>
+
+             <!--Azul-->
+    
+            <div class="rounded-[20px] overflow-hidden shadow-md hover:shadow-lg h-[370px]">
+                <img src="assets/img/t4.png" alt="Psicoterapias para niños" />
+                <h3 class="font-[600] p-2">Adultos Mayores</h3>
+                <p class="px-2 mb-3">
+                    En la psicoterapia con adultos mayores, enfrentamos juntos los
+                    cambios y desafíos propios de esta etapa.
+                </p>
+                <a href="https://wa.link/648h7a" target="_blank" class="text-center no-underline hover:no-underline bg-verde px-[20px] py-[10px] rounded-[10px] flex items-center justify-center w-[300px] mx-[20px] hover:bg-verde-oscuro">
+                    <p class="text-[16px] text-center">Reservar una cita</p>
+                </a>
+            </div>
+
+            <div class="rounded-[20px] overflow-hidden shadow-md hover:shadow-lg h-[370px]">
+                <img src="assets/img/t5.png" alt="Psicoterapias para niños" />
+                <h3 class="font-[600] p-2">Familia</h3>
+                <p class="px-2 mb-3">
+                    En la psicoterapia familiar, creamos un espacio seguro para mejorar
+                    la comunicación y resolver conflictos.
+                </p>
+                <a href="https://wa.link/3ckiw9" target="_blank" class="text-center no-underline hover:no-underline bg-verde px-[20px] py-[10px] rounded-[10px] flex items-center justify-center w-[300px] mx-[20px] hover:bg-verde-oscuro">
+                    <p class="text-[16px] text-center">Reservar una cita</p>
+                </a>
+            </div>
+    
+
+            <div class="rounded-[20px] overflow-hidden shadow-md hover:shadow-lg h-[370px]">
+                <img src="assets/img/t5.png" alt="Psicoterapias para niños" />
+                <h3 class="font-[600] p-2">Familia</h3>
+                <p class="px-2 mb-3">
+                    En la psicoterapia familiar, creamos un espacio seguro para mejorar
+                    la comunicación y resolver conflictos.
+                </p>
+                <a href="#" target="_blank" class="text-center no-underline hover:no-underline bg-verde px-[20px] py-[10px] rounded-[10px] flex items-center justify-center w-[300px] mx-[20px] hover:bg-verde-oscuro">
+                    <p class="text-[16px] text-center">Reservar una cita</p>
+                </a>
+            </div>
+
+
+             <!--Beige-->
+            <div class="rounded-[20px] overflow-hidden shadow-md hover:shadow-lg h-[370px]">
+                <img src="assets/img/t5.png" alt="Psicoterapias para niños" />
+                <h3 class="font-[600] p-2">Familia</h3>
+                <p class="px-2 mb-3">
+                    En la psicoterapia familiar, creamos un espacio seguro para mejorar
+                    la comunicación y resolver conflictos.
+                </p>
+                <a href="#" target="_blank" class="text-center no-underline hover:no-underline bg-verde px-[20px] py-[10px] rounded-[10px] flex items-center justify-center w-[300px] mx-[20px] hover:bg-verde-oscuro">
+                    <p class="text-[16px] text-center">Reservar una cita</p>
+                </a>
+            </div>
+
+            <div class="rounded-[20px] overflow-hidden shadow-md hover:shadow-lg h-[370px]">
+                <img src="assets/img/t5.png" alt="Psicoterapias para niños" />
+                <h3 class="font-[600] p-2">Familia</h3>
+                <p class="px-2 mb-3">
+                    En la psicoterapia familiar, creamos un espacio seguro para mejorar
+                    la comunicación y resolver conflictos.
+                </p>
+                <a href="#" target="_blank" class="text-center no-underline hover:no-underline bg-verde px-[20px] py-[10px] rounded-[10px] flex items-center justify-center w-[300px] mx-[20px] hover:bg-verde-oscuro">
+                    <p class="text-[16px] text-center">Reservar una cita</p>
+                </a>
+            </div>
+
+            <div class="rounded-[20px] overflow-hidden shadow-md hover:shadow-lg h-[370px]">
+                <img src="assets/img/t5.png" alt="Psicoterapias para niños" />
+                <h3 class="font-[600] p-2">Familia</h3>
+                <p class="px-2 mb-3">
+                    En la psicoterapia familiar, creamos un espacio seguro para mejorar
+                    la comunicación y resolver conflictos.
+                </p>
+                <a href="#" target="_blank" class="text-center no-underline hover:no-underline bg-verde px-[20px] py-[10px] rounded-[10px] flex items-center justify-center w-[300px] mx-[20px] hover:bg-verde-oscuro">
+                    <p class="text-[16px] text-center">Reservar una cita</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!---------------------->
+    <!--FOOTER-->
+     <!---------------------->
+    <footer class="bg-verde dark:bg-gray-900">
+        <div class="container px-6 py-8 mx-auto">
+            <div class="flex flex-col items-center text-center">
+                <a href="#" class="hover:no-underline">
+                    <p class="text-[21px] text-black">
+                        Mentes<b class="font-extrabold text-white">Geniales</b>
+                    </p>
+                </a>
+    
+                <p class="max-w-md mx-auto mt-4 text-white dark:text-gray-400">
+                    Porque tener una salud mentalmente estable también es importante.
+                </p>
+
+                <div class="flex gap-[30px]">
+                    <a href="https://codepen.io/Juxtopposed" target="_blank" class="text-[40px] hover:text-purple-700"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/juxtopposed" target="_blank" class="text-[40px] hover:text-blue-900"><i
+                            class="fa-brands fa-facebook"></i></a>
+                </div>
+                <br />
+                <div class="flex justify-between align-center items-center sm:flex-row sm:justify-between">
+                    <p class="text-sm text-white">© Copyright 2021. All Rights Reserved.</p>
+                </div>
+            </div>
+            <hr class="my-10 border-gray-200 dark:border-gray-700" />
+        </div>
+    </footer>
+
+    <script>
+        let button = document.querySelector("[data-mobile-menu]");
+        let mobileMenu = document.getElementById("mobile-menu");
+
+        button.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
+    <script>
+        function scrollHandler(element = null) {
+            return {
+                height: 0,
+                element: element,
+                calculateHeight(position) {
+                    const distanceFromTop = this.element.offsetTop;
+                    const contentHeight = this.element.clientHeight;
+                    const visibleContent = contentHeight - window.innerHeight;
+                    const start = Math.max(0, position - distanceFromTop);
+                    const percent = (start / visibleContent) * 100;
+                    requestAnimationFrame(() => {
+                        this.height = percent;
+                    });
+                },
+                init() {
+                    this.element = this.element || document.body;
+                    this.calculateHeight(window.scrollY);
+                },
+            };
+        }
+    </script>
+
+    
+</body>
+
+</html>

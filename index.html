@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentes Geniales</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "verde": "#6ABFAA",
+                        "azul": "#7ABBFF",
+                        "azul-oscuro": "#50A5FF",
+                        "naranja": "#FCCFBC",
+                        "gris": "#959595",
+                        "gris-claro": "#F9F8F8",
+                    },
+
+                    screens: {
+                        'xs': "320px",
+
+                        'sm': "640px",
+
+                        'md': "768px",
+
+                        'lg': "1024px",
+
+                        'xl': "1280px",
+
+                        "2xl": "1536px",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-gray-300 overflow-x-hidden">
+  
+    <nav class="z-[100] bg-white/4 lg:px-[150px] lg:py-[25px] xs:px-[30px] xs:py-[25px]">
+        <div class="flex justify-between items-center">
+            <a href="#" class="hover:no-underline">
+                <p class="text-[21px] text-black">
+                    Mentes<b class="font-extrabold text-verde">Geniales</b>
+                </p>
+            </a>
+
+            <div class="hidden md:flex">
+               
+                <a href="https://api.whatsapp.com/send/?phone=51997390808&text=%C2%A1Hola%21%20Quisiera%20solicitar%20informaci%C3%B3n&type=phone_number&app_absent=0"
+                    class="block bg-verde ml-5 text-white text-[16px] font-bold px-[25px] py-3 rounded-[18px] hover:bg-[#5aa391] hover:no-underline"
+                    target="_blank">
+                    Contáctame
+                </a>
+            </div>
+
+            <div class="md:hidden">
+                <button data-mobile-menu class="py-3 px-2 hover:text-[#6ABFAA]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 6l16 0" />
+                        <path d="M4 12l16 0" />
+                        <path d="M4 18l16 0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!--Menu Celular -->
+        
+    </nav>
+
+    <!--------------->
+    <!--HOOK-->
+    <!--------------->
+    <section class="pb-[20px] lg:px-[150px] lg:pt-[90px] lg:pb-[120px] xs:px-[30px] py-[25px]">
+        <div class="naranja"></div>
+        <div class="verde"></div>
+        <div class="azul"></div>
+    
+        <div class="flex flex-col items-center md:flex-row  md:justify-between">
+            <div class="w-full md:w-3/5 lg:w-3/5 md:mr-4">
+                <h1 class="font-bold text-[50px] xs:text-center xs:text-[37px] md:text-center md:text-[30px] lg:text-[32px] xl:text-[50px] leading-normal md:leading-snug mb-4">
+                    Consultorio Psicológico <br /> <span class="text-verde">Mentes Geniales</span>
+                </h1>
+                <p class="text-gray-600 text-base text-center md:text-lg leading-normal md:leading-relaxed mb-4">
+                    Me dedico a brindar una atención basada en el motivo de consulta.
+                    Juntos podremos prevenir o intervenir en situaciones que generen
+                    preocupación.
+                </p>
+                <div class="flex flex-wrap gap-4 items-center justify-center">
+                    <a href="https://api.whatsapp.com/send/?phone=51997390808&text=%C2%A1Hola%21%20Quisiera%20solicitar%20informaci%C3%B3n&type=phone_number&app_absent=0"
+                        class="bg-verde text-white text-lg font-bold px-6 py-3 rounded-md hover:bg-azul hover:no-underline">
+                        Enviar mensaje
+                    </a>
+                </div>
+            </div>
+            <div class="mt-4 md:mt-0">
+                <img src="assets/img/psicologa.png" alt="Psicologa Verónica Valdivia" class="rounded-xl w-[540px]" />
+            </div>
+        </div>
+    </section>
+    
+    <!--DESCRIPCION-->
+
+    <section class="bg-white lg:px-[150px] lg:py-[55px] xs:px-[30px] xs:py-[25px]">
+        <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-3">
+            <div class="h-[220px] flex flex-col justify-between items-center py-3 lg:w-[25%] rounded-[10px] shadow-lg">
+                <i class="fa-solid fa-laptop text-verde text-[70px] pt-3 pb-2"></i>
+                <h2 class="font-bold text-[17px] pb-1">Servicio en línea</h2>
+                <p class="text-center px-4">
+                    Accede a sesiones desde casa para mayor comodidad.
+                </p>
+            </div>
+            <div class="h-[220px] flex flex-col justify-between items-center py-3 lg:w-[25%] rounded-[10px] shadow-lg">
+                <i class="fa-solid fa-building text-azul text-[70px] pt-3 pb-2"></i>
+                <h2 class="font-bold text-[17px] pb-1 text-center">
+                    Servicio en consultorio
+                </h2>
+                <p class="text-center px-4">
+                    Ambiente acogedor <br />para sesiones personalizadas.
+                </p>
+            </div>
+            <div class="h-[220px] flex flex-col justify-between items-center py-3 lg:w-[25%] rounded-[10px] shadow-lg">
+                <i class="fa-solid fa-person text-naranja text-[70px] pt-3 pb-2"></i>
+                <h2 class="font-bold text-[17px] pb-1 text-center">
+                    Sin límite de edad
+                </h2>
+                <p class="text-center px-4">
+                    Atendemos a <br />personas de <br />todas las edades.
+                </p>
+            </div>
+            <div class="h-[220px] flex flex-col justify-between items-center py-3 lg:w-[25%] rounded-[10px] shadow-lg">
+                <i class="fa-solid fa-circle-check text-gris text-[70px] pt-3 pb-2"></i>
+                <h2 class="font-bold text-[17px] pb-1 text-center">
+                    Psicóloga Calificada
+                </h2>
+                <p class="text-center px-4">
+                    Guiados por una profesional con experiencia.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!--END OF DESCRIPTION-->
+
+    <!--SERVICIOS-->
+    <section class="bg-white lg:px-[150px] lg:py-[60px] lg:pb-[90px] xs:px-[30px] xs:py-[25px]">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <a href="#" class="flex flex-col justify-center hover:no-underline">
+                <p class="text-[14px] text-verde">Servicios</p>
+                <h2 class="font-[900] text-[35px] leading-[50px]">
+                    Descubre los servicios que tenemos para ti.
+                </h2>
+            </a>
+    
+            <a href="#" class="hover:no-underline rounded-[20px] overflow-hidden shadow-md hover:shadow-lg">
+                <img src="assets/img/t1.png" alt="Psicoterapias para niños" class="w-full" />
+                <h3 class="font-[600] p-2">Niños</h3>
+                <p class="p-2">
+                    En la psicoterapia con niños, creo un espacio acogedor donde pueden
+                    expresarse a través de juegos y actividades creativas.
+                </p>
+            </a>
+    
+            <a href="#" class="rounded-[20px] overflow-hidden hover:no-underline shadow-md hover:shadow-lg">
+                <img src="assets/img/t2.png" alt="Psicoterapias para niños" />
+                <h3 class="font-[600] p-2">Adolescentes</h3>
+                <p class="p-2">
+                    En la psicoterapia con adolescentes, proporciono un espacio
+                    confidencial para explorar pensamientos y emociones.
+                </p>
+            </a>
+    
+            <a href="#" class="rounded-[20px] overflow-hidden hover:no-underline shadow-md hover:shadow-lg">
+                <img src="assets/img/t3.png" alt="Psicoterapias para niños" />
+                <h3 class="font-[600] p-2">Adultos</h3>
+                <p class="p-2">
+                    En la psicoterapia para adultos, abordamos desafíos emocionales a
+                    través de conversaciones reflexivas y soluciones centradas en el
+                    individuo.
+                </p>
+            </a>
+    
+            <a href="#" class="rounded-[20px] overflow-hidden hover:no-underline shadow-md hover:shadow-lg">
+                <img src="assets/img/t4.png" alt="Psicoterapias para niños" />
+                <h3 class="font-[600] p-2">Adultos Mayores</h3>
+                <p class="p-2">
+                    En la psicoterapia con adultos mayores, enfrentamos juntos los
+                    cambios y desafíos propios de esta etapa.
+                </p>
+            </a>
+    
+            <a href="#" class="rounded-[20px] overflow-hidden hover:no-underline shadow-md hover:shadow-lg">
+                <img src="assets/img/t5.png" alt="Psicoterapias para niños" />
+                <h3 class="font-[600] p-2">Familia</h3>
+                <p class="p-2">
+                    En la psicoterapia familiar, creamos un espacio seguro para mejorar
+                    la comunicación y resolver conflictos.
+                </p>
+            </a>
+        </div>
+    </section>
+    
+
+    <!--FAQ-->
+    <section class="lg:px-[150px] lg:py-[80px] xs:px-[30px] xs:py-[25px]">
+        <div class="flex flex-col-reverse lg:flex-row justify-between items-center gap-4">
+            <div class="w-full lg:w-[40%] mb-6 lg:mb-0">
+                <img src="assets/img/PreguntasFrecuentes.png" alt="Preguntas Frecuentes" />
+            </div>
+    
+            <div class="w-full lg:w-[60%]">
+                <h2 class="text-center lg:text-left font-extrabold text-[30px]">
+                    Preguntas Frecuentes
+                </h2>
+
+                <div class="item px-6 py-6" x-data="{isOpen : false}">
+                    <a href="#" class="hover:no-underline flex items-center justify-between"
+                        @click.prevent="isOpen = true">
+                        <h4 class="text-[18px]" :class="{'text-verde text-[16px] font-bold' : isOpen == true}">
+                            ¿Cuántas sesiones son?
+                        </h4>
+                        <svg :class="{'transform rotate-180' : isOpen == true}" class="w-[26px] h-[26px] text-gray-500"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </a>
+
+                    <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
+                        :class="{'text-gray-800' : isOpen == true}">
+                        <p>
+                            Cuento con tres paquetes. <br />
+                            1er paquete: 4 sesiones <br />2do paquete: 8 sesiones <br />
+                            3er paquete: 12 sesiones
+                        </p>
+                    </div>
+                </div>
+                <div class="item px-6 py-6" x-data="{isOpen : false}">
+                    <a href="#" class="hover:no-underline flex items-center justify-between"
+                        @click.prevent="isOpen = true">
+                        <h4 class="text-[18px]" :class="{'text-verde text-[16px] font-bold' : isOpen == true}">
+                            ¿Cuánto dura una sesión?
+                        </h4>
+                        <svg :class="{'transform rotate-180' : isOpen == true}" class="w-[26px] h-[26px]text-gray-500"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </a>
+
+                    <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
+                        :class="{'text-gray-800' : isOpen == true}">
+                        <p>
+                            Entre 45 a 60 minutos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item px-6 py-6" x-data="{isOpen : false}">
+                    <a href="#" class="hover:no-underline flex items-center justify-between"
+                        @click.prevent="isOpen = true">
+                        <h4 class="text-[18px]" :class="{'text-verde text-[16px] font-bold' : isOpen == true}">
+                            ¿Cómo puedo agendar una cita?
+                        </h4>
+                        <svg :class="{'transform rotate-180' : isOpen == true}" class="w-[26px] h-[26px] text-gray-500"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </a>
+
+                    <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
+                        :class="{'text-gray-800' : isOpen == true}">
+                        <p>
+                            Me puedes enviar un correo <a href="#" class="text-azul-oscuro underline">aquí</a> o un mensaje de WhatsApp <a href="#" class="text-azul-oscuro underline">aquí.</a>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="item px-6 py-6" x-data="{isOpen : false}">
+                    <a href="#" class="hover:no-underline flex items-center justify-between"
+                        @click.prevent="isOpen = true">
+                        <h4 class="text-[18px]" :class="{'text-verde text-[16px] font-bold' : isOpen == true}">
+                            ¿La terapia es confidencial?
+                        </h4>
+                        <svg :class="{'transform rotate-180' : isOpen == true}" class="w-[26px] h-[26px] text-gray-500"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </a>
+
+                    <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
+                        :class="{'text-gray-800' : isOpen == true}">
+                        <p>
+                            Sí, la confidencialidad es una parte fundamental de la terapia.
+                            Todo lo que se discute durante las sesiones se mantiene en
+                            estricta confidencialidad.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item px-6 py-6" x-data="{isOpen : false}">
+                    <a href="#" class="hover:no-underline flex items-center justify-between"
+                        @click.prevent="isOpen = true">
+                        <h4 class="text-[18px]" :class="{'text-verde text-[16px] font-bold' : isOpen == true}">
+                            ¿Cuáles son los métodos de pago?
+                        </h4>
+                        <svg :class="{'transform rotate-180' : isOpen == true}" class="w-[26px] h-[26px] text-gray-500"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </a>
+
+                    <div x-show="isOpen" @click.away="isOpen = false" class="mt-3"
+                        :class="{'text-gray-800' : isOpen == true}">
+                        <p>
+                            Yape, Plin, BBVA, Interbank o Western Union.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--LLamada a la acción-->
+    <section class="lg:px-[150px] lg:py-[40px] xs:px-[30px] xs:py-[25px] hoverno-underline hover:scale-[1.02] transition">
+        <a href="https://api.whatsapp.com/send/?phone=51997390808&text=%C2%A1Hola%21%20Quisiera%20solicitar%20informaci%C3%B3n&type=phone_number&app_absent=0" target="_blank" class="cursor-pointer hover:no-underline text-[30px] text-white font-extrabold">
+            <div class="bg-verde flex justify-center items-center h-[180px] rounded-[20px]">
+                ¡Reserva tu cita ya!
+            </div>
+        </a>
+    </section>
+
+    <!--CARRUSEL-->
+    <section class="max-w-2xl mx-auto my-10">
+       
+
+            <div id="default-carousel" class="relative" data-carousel="static">
+             
+                <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+                   
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl ">Primer Slide</span>
+                        <img src="assets/img/c-1.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                   
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="assets/img/c-2.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                   
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="assets/img/c-3.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                </div>
+                
+                
+                <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                </div>
+               
+                <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        <span class="hidden">Anterior</span>
+                    </span>
+                </button>
+                <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span class="hidden">Siguiente</span>
+                    </span>
+                </button>
+            </div>
+            <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+
+    </section>
+
+    <!---------------------->
+    <!--FOOTER-->
+     <!---------------------->
+    <footer class="bg-verde dark:bg-gray-900">
+        <div class="container px-6 py-8 mx-auto">
+            <div class="flex flex-col items-center text-center">
+                <a href="#" class="hover:no-underline">
+                    <p class="text-[21px] text-black">
+                        Mentes<b class="font-extrabold text-white">Geniales</b>
+                    </p>
+                </a>
+    
+                <p class="max-w-md mx-auto mt-4 text-white dark:text-gray-400">
+                    Porque tener una salud mentalmente estable también es importante.
+                </p>
+
+                <div class="flex gap-[30px]">
+                    <a href="https://codepen.io/Juxtopposed" target="_blank" class="text-[40px] hover:text-purple-700"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/juxtopposed" target="_blank" class="text-[40px] hover:text-blue-900"><i
+                            class="fa-brands fa-facebook"></i></a>
+                </div>
+                <br />
+                <div class="flex justify-between align-center items-center sm:flex-row sm:justify-between">
+                    <p class="text-sm text-white">© Copyright 2021. All Rights Reserved.</p>
+                </div>
+            </div>
+            <hr class="my-10 border-gray-200 dark:border-gray-700" />
+        </div>
+    </footer>
+
+    <script>
+        let button = document.querySelector("[data-mobile-menu]");
+        let mobileMenu = document.getElementById("mobile-menu");
+
+        button.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
+    <script>
+        function scrollHandler(element = null) {
+            return {
+                height: 0,
+                element: element,
+                calculateHeight(position) {
+                    const distanceFromTop = this.element.offsetTop;
+                    const contentHeight = this.element.clientHeight;
+                    const visibleContent = contentHeight - window.innerHeight;
+                    const start = Math.max(0, position - distanceFromTop);
+                    const percent = (start / visibleContent) * 100;
+                    requestAnimationFrame(() => {
+                        this.height = percent;
+                    });
+                },
+                init() {
+                    this.element = this.element || document.body;
+                    this.calculateHeight(window.scrollY);
+                },
+            };
+        }
+    </script>
+
+    
+</body>
+
+</html>

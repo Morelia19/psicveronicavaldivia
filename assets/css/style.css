@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+/*Definicion de colores*/
+:root {
+    --verde: #0c443a;
+    --limon: #25d1b2;
+    --limon-pastel: #8bd0bf;
+    --limon-oscuro: #2c9e8a;
+    --morado: #bd769b;
+    --morado-oscura: #79234f;
+    --gris: #b8b8b8;
+    --degradado: linear-gradient(90deg, var(--limon), var(--verde));
+    --sombra: 0 0 13px 0 rgba(185, 185, 185, .25);
+    --sombraText: 0 0 30px 0 var(--limon);
+}
+
+/*General*/
+* {
+
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+
+}
+
+.naranja{
+    position: absolute;
+    width: 652px;
+    height: 652px;
+    background-color: #FCCFBC;
+    border-radius: 100%;
+    left: 900px;
+    top: -351px;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+.naranja::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    border-radius: 100%;
+    z-index: -1;
+
+}
+
+.verde{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #9CD6C8;
+    border-radius: 100%;
+    left: 161px;
+    top: 95px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.verde::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 100%;
+    z-index: -1;
+
+}
+
+.azul{
+    position: absolute;
+    width: 436px;
+    height: 436px;
+    background-color: #7ABBFF;
+    border-radius: 100%;
+    left: 139px;
+    top: 600px;
+    z-index: -1;
+    opacity: 0.5;
+
+
+}
+
+.azul::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 100%;
+    z-index: -1;
+
+}
