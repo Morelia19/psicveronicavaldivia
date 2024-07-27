@@ -59,8 +59,8 @@
     height: 100px;
     background-color: #9CD6C8;
     border-radius: 100%;
-    left: 150px;
-    top: 95px;
+    left: 230px;
+    top: 75px;
     z-index: -1;
     opacity: 0.5;
 }
@@ -85,8 +85,8 @@
     height: 436px;
     background-color: #7ABBFF;
     border-radius: 100%;
-    left: 139px;
-    top: 660px;
+    left: 175px;
+    top: 600px;
     z-index: -1;
     opacity: 0.5;
 
@@ -105,4 +105,121 @@
     border-radius: 100%;
     z-index: -1;
 
+}
+
+
+
+/* Media queries */
+@media (max-width: 1200px) {
+    .naranja {
+        width: 500px;
+        height: 500px;
+        left: 700px;
+        top: -250px;
+    }
+
+    .naranja::after {
+        width: 350px;
+        height: 350px;
+    }
+
+    .verde {
+        width: 80px;
+        height: 80px;
+        left: 100px;
+        top: 75px;
+    }
+
+    .verde::after {
+        width: 25px;
+        height: 25px;
+    }
+
+    .azul {
+        width: 350px;
+        height: 350px;
+        left: 100px;
+        top: 500px;
+    }
+
+    .azul::after {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .naranja {
+        width: 400px;
+        height: 400px;
+        left: 300px;
+        top: -200px;
+    }
+
+    .naranja::after {
+        width: 300px;
+        height: 300px;
+    }
+
+    .verde {
+        width: 60px;
+        height: 60px;
+        left: 50px;
+        top: 50px;
+    }
+
+    .verde::after {
+        width: 20px;
+        height: 20px;
+    }
+
+    .azul {
+        width: 250px;
+        height: 250px;
+        left: 50px;
+        top: 400px;
+    }
+
+    .azul::after {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .naranja {
+        width: 300px;
+        height: 300px;
+        left: 50px;
+        top: -150px;
+    }
+
+    .naranja::after {
+        width: 200px;
+        height: 200px;
+    }
+
+    .verde {
+        width: 40px;
+        height: 40px;
+        left: 20px;
+        top: 30px;
+    }
+
+    .verde::after {
+        width: 15px;
+        height: 15px;
+    }
+
+    .azul {
+        width: 150px;
+        height: 150px;
+        left: 20px;
+        top: 300px;
+    }
+
+    .azul::after {
+        width: 100px;
+        height: 100px;
+    }
 }
